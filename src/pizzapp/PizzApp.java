@@ -10,6 +10,7 @@ public class PizzApp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Gmeret = new javax.swing.ButtonGroup();
         lblValaszthato = new javax.swing.JLabel();
         cmdValaszthatoPizzak = new javax.swing.JComboBox<>();
         pnlMeret = new javax.swing.JPanel();
@@ -43,8 +44,10 @@ public class PizzApp extends javax.swing.JFrame {
 
         pnlMeret.setBorder(javax.swing.BorderFactory.createTitledBorder("Méret"));
 
+        Gmeret.add(rdbMeret25);
         rdbMeret25.setText("25 cm");
 
+        Gmeret.add(rdbMeret32);
         rdbMeret32.setSelected(true);
         rdbMeret32.setText("32 cm");
 
@@ -244,6 +247,7 @@ public class PizzApp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup Gmeret;
     private javax.swing.JButton btnRendel;
     private javax.swing.JCheckBox chbAnanasz;
     private javax.swing.JCheckBox chbHagyma;
